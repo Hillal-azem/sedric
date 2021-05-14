@@ -2,6 +2,7 @@ const express  = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
+
     // appel vers la base de données pour chercher tous les articles
     const articles = [
         {
