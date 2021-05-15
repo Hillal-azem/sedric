@@ -1,10 +1,10 @@
 
+const Counter = function ({ counter }) {
 
-const Counter = function () {
 
     return (
         <div>
-            <h2>Compteur</h2>
+            <h2>Compteur: {counter}</h2>
         </div>
     )
 }

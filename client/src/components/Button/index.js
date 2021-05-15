@@ -1,10 +1,14 @@
 import '../../css/button/index.css'
 
-const Button = () => {
+const Button = ({ counter, setCounter }) => {
+
+    const handleButtonClick = function () {
+        setCounter(counter + 1)
+    }
 
     return (
         <div id="button-container">
-            <button className="btn">Incrémenter</button>
+            <button className="btn" onClick={handleButtonClick}>Incrémenter</button>
         </div>
     );
 };
